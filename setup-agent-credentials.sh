@@ -1,11 +1,13 @@
 #!/bin/bash
+export VAULT_ADDR="${VAULT_ADDR:-http://localhost:8200}"
+export VAULT_TOKEN="${VAULT_TOKEN:-myroot}"
 
 set -e
 
 echo "=== Setting up Vault Agent Credentials ==="
 
-export VAULT_ADDR=http://localhost:8200
-export VAULT_TOKEN=myroot
+# export VAULT_ADDR=http://localhost:8200
+# export VAULT_TOKEN=myroot
 
 echo "1. Enabling AppRole auth method..."
 vault auth enable approle 2>/dev/null || echo "AppRole already enabled"

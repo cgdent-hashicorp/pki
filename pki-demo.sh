@@ -1,4 +1,6 @@
 #!/bin/bash
+export VAULT_ADDR="${VAULT_ADDR:-http://localhost:8200}"
+export VAULT_TOKEN="${VAULT_TOKEN:-myroot}"
 
 # HashiCorp Vault PKI Certificate Issuance Demo
 # Using demo-magic.sh for paced demonstrations

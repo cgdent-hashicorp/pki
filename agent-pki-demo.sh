@@ -89,7 +89,7 @@ echo "   - Vault Agent is the machine actor that authenticates, renders, and rot
 echo ""
 
 # Set environment variables for Vault Agent
-export VAULT_AGENT_ADDR=http://localhost:8100
+export VAULT_AGENT_ADDR=http://localhost:8200
 export VAULT_ADDR=http://localhost:8200
 export VAULT_TOKEN=myroot
 
